@@ -20,7 +20,7 @@ ELSE()
         WORKING_DIRECTORY ${CMAKE_CURRENT_LIST_DIR}/../
         )
 
-    add_custom_target(doc ALL DEPENDS html)
+    add_custom_target(rapidjson-doc ALL DEPENDS html)
     install(DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/html
         DESTINATION ${DOC_INSTALL_DIR}
         COMPONENT doc)
